@@ -9,12 +9,15 @@ class Caixa {
 
     init {
         println("     SEJA BEM-VINDE AO SUPERMERCADO     ")
+        val novoCliente: Cliente = Cliente()
+        novoCliente.cadastrarCliente()
+        novoCliente.verificaMaioridade()
         menu()
     }
 
     fun cadastrarProdutosNaLista(){
         println("---------- CADASTRAR PRODUTOS ----------")
-        println("Quantos produtos deseja adicionar?")
+        print("Quantos produtos deseja adicionar?")
         qtdProdutos = readln().toInt()
 
         for(i in 1..qtdProdutos){
@@ -23,10 +26,10 @@ class Caixa {
             print("Digite o ${i}º produto: ")
             novoProduto.nomeProduto = readln()
 
-            println("Digite o preço de ${novoProduto.nomeProduto} (Ex: 25.5): ")
+            print("Digite o preço de ${novoProduto.nomeProduto} (Ex: 25.5): ")
             novoProduto.valorProduto = readln().toDouble()
 
-            println("Digite a quantidade de ${novoProduto.nomeProduto} (Ex: 2): ")
+            print("Digite a quantidade de ${novoProduto.nomeProduto} (Ex: 2): ")
             novoProduto.quantidadeProduto = readln().toDouble()
 
             novoProduto.valorTotalProduto = novoProduto.valorProduto * novoProduto.quantidadeProduto
