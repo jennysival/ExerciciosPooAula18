@@ -1,10 +1,4 @@
 package cadastroDePessoas
-//● Observações: lembrar de usar o conceito de encapsulamento, além
-//disso seu programa pode coletar os dados do usuário ou usar valores
-//estáticos, além disso faça uso dos conceitos vistos em sala de aula e
-//use a criatividade.
-//● Sugestão: você pode criar um menu para seu programa ser mais
-//amigável(isso é opcional, e caso faça use a criatividade)
 
 class Pessoa(
     private var diaNascimento: Int = 0,

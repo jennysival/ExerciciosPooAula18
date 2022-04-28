@@ -2,17 +2,6 @@ package cadastroDePessoas
 
 import kotlin.system.exitProcess
 
-
-////● Fazer um arquivo principal que instancie os objetos, criar dois
-////objetos da classe Pessoa, um representando Albert Einstein (nascido
-////em 14/3/1879)
-
-
-//outro representando Isaac Newton (nascido em
-////4/1/1643) mostre quais seriam as idades de Einstein e Newton caso
-////estivessem vivos.
-
-
 fun main() {
 
     println("Seja Bem-Vinde ao sistema de\nverificação de idades\n")
