@@ -15,13 +15,11 @@ class Cliente{
     fun verificaMaioridade(){
         if(idadeCliente >=18){
             println("----------------------------------------------------")
-            println("Cliente $nomeCliente pode comprar bebidas alcoólicas")
-            println("----------------------------------------------------")
+            println("Cliente $nomeCliente pode comprar bebidas alcoólicas\n")
         }
         else{
             println("--------------------------- A T E N Ç Ã O ---------------------------------")
-            println("Cliente $nomeCliente é menor de idade e não pode comprar bebidas alcoólicas")
-            println("---------------------------------------------------------------------------")
+            println("Cliente $nomeCliente é menor de idade e não pode comprar bebidas alcoólicas\n")
         }
     }
 }

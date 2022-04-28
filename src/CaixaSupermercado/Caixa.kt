@@ -5,7 +5,6 @@ import kotlin.system.exitProcess
 class Caixa {
 
     val listaProdutos = ArrayList<Produto>()
-    var qtdProdutos: Int = 0
 
     init {
         println("     SEJA BEM-VINDE AO SUPERMERCADO     ")
@@ -18,7 +17,7 @@ class Caixa {
     fun cadastrarProdutosNaLista(){
         println("---------- CADASTRAR PRODUTOS ----------")
         print("Quantos produtos deseja adicionar?")
-        qtdProdutos = readln().toInt()
+        val qtdProdutos = readln().toInt()
 
         for(i in 1..qtdProdutos){
             val novoProduto = Produto()
