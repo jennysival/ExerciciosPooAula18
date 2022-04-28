@@ -1,5 +1,7 @@
 package cadastroDePessoas
 
+import java.time.LocalDate
+
 class Pessoa(
     private var diaNascimento: Int = 0,
     private var mesNascimento: Int = 0,
@@ -15,9 +17,9 @@ class Pessoa(
     }
 
     fun informarIdade(){
-        var diaAtual = 28
-        var mesAtual = 4
-        var anoAtual = 2022
+        var diaAtual = LocalDate.now().dayOfMonth
+        var mesAtual = LocalDate.now().monthValue
+        var anoAtual = LocalDate.now().year
 
         var calculoIdade = 0
 
