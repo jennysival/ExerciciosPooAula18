@@ -1,8 +1,8 @@
-package CaixaSupermercado
+package caixaSupermercado
 
 class Cliente{
-    var nomeCliente = ""
-    var idadeCliente = 0
+    private var nomeCliente = ""
+    private var idadeCliente = 0
 
     fun cadastrarCliente(){
         print("Digite o nome do cliente: ")

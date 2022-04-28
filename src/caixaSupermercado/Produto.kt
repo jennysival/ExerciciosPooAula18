@@ -1,4 +1,4 @@
-package CaixaSupermercado
+package caixaSupermercado
 
 class Produto {
     var nomeProduto = ""

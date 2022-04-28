@@ -1,10 +1,10 @@
-package CaixaSupermercado
+package caixaSupermercado
 
 import kotlin.system.exitProcess
 
 class Caixa {
 
-    val listaProdutos = ArrayList<Produto>()
+    private val listaProdutos = ArrayList<Produto>()
 
     init {
         println("     SEJA BEM-VINDE AO SUPERMERCADO     ")
@@ -14,7 +14,7 @@ class Caixa {
         menu()
     }
 
-    fun cadastrarProdutosNaLista(){
+    private fun cadastrarProdutosNaLista(){
         println("---------- CADASTRAR PRODUTOS ----------")
         print("Quantos produtos deseja adicionar?")
         val qtdProdutos = readln().toInt()
@@ -39,7 +39,7 @@ class Caixa {
         menu()
     }
 
-    fun exibirListaProdutosCadastrados(){
+    private fun exibirListaProdutosCadastrados(){
         println("------- EXIBIR LISTA DE PRODUTOS -------")
         listaProdutos.forEach {
             it.exibirProduto()
@@ -48,7 +48,7 @@ class Caixa {
         menu()
     }
 
-    fun calcularValorTotalProdutosDaLista(){
+    private fun calcularValorTotalProdutosDaLista(){
         println("-------- VALOR TOTAL DA COMPRA ---------")
 
         var soma = 0.0
@@ -61,7 +61,7 @@ class Caixa {
         menu()
     }
 
-    fun menu(){
+    private fun menu(){
         println("--------------- M E N U ----------------")
         println("[1] Cadastrar Produtos")
         println("[2] Exibir Produtos Cadastrados")
