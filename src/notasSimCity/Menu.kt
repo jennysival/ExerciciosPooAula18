@@ -5,13 +5,12 @@ import kotlin.system.exitProcess
 class Menu {
 
     init{
-        val novoAluno = Aluno()
-
         println("Deseja calcular a média de notas de um novo aluno?")
         println("[1] SIM")
         println("[2] NÃO")
         when(readln().toInt()){
             1 -> {
+                val novoAluno = Aluno()
                 novoAluno.cadastrarNome()
                 novoAluno.cadastrarNotas()
                 novoAluno.calcularMedia()
